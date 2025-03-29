@@ -39,13 +39,13 @@
 // |       |      |   ^   |      |      |      |              |      |       |       |      |       |       |
 // |       |  <-  |   v   |  ->  |      |      |              |      |       |       |      |       |       |
 // |       |      |       |      |      |EP_TOG |     |  |     |      |       |       |      |  "|"  |
-//                        |      |      |      |     |  |     |      |       |  UNLOCK_STUDIO |
+//                        |      |      |      |     |  |     |      |       |   |
             bindings = <
 &kp F1  &kp F2           &kp F3            &kp F4            &kp F5  &kp F6                     &kp F7 &kp F8    &kp F9    &kp F10   &kp F11   &kp F12
 &trans  &trans           &kp UP            &trans            &trans  &trans                     &trans &trans    &trans    &trans    &trans    &trans
 &trans  &kp LEFT         &kp DOWN          &kp RIGHT         &trans  &trans                     &trans &trans    &trans    &trans    &trans    &trans
 &trans  &ext_power EP_ON &ext_power EP_OFF &ext_power EP_TOG &trans  &trans    &trans   &trans  &trans &kp MINUS &kp PLUS  &kp LBRC  &kp RBRC  &kp PIPE
-                                           &trans            &trans  &trans    &trans   &trans  &trans &trans    &studio_unlock
+                                           &trans            &trans  &trans    &trans   &trans  &trans &trans    &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;

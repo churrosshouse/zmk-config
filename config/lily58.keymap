@@ -15,6 +15,59 @@
 #include <dt-bindings/zmk/reset.h>
 
 /{
+
+    combo_brc {
+        timeout-ms = <50>;
+        key-positions = <1 2>;
+        bindings = <&macro_brc>;
+    };
+    
+    macro_brc: macro_brc {
+        compatible = "zmk,behavior-macro";
+        label = "macro_brc";
+        #binding-cells = <0>;
+        bindings = <&kp LBRC>, <&kp RBRC>, <&kp LEFT>;
+    };
+
+    combo_bkt {
+        timeout-ms = <50>;
+        key-positions = <7 8>;
+        bindings = <&macro_bkt>;
+    };
+    
+    macro_bkt: macro_bkt {
+        compatible = "zmk,behavior-macro";
+        label = "macro_bkt";
+        #binding-cells = <0>;
+        bindings = <&kp LBKT>, <&kp RBKT>, <&kp LEFT>;
+    };
+
+    combo_than {
+        timeout-ms = <50>;
+        key-positions = <13 14>;
+        bindings = <&macro_than>;
+    };
+    
+    macro_than: macro_than {
+        compatible = "zmk,behavior-macro";
+        label = "macro_than";
+        #binding-cells = <0>;
+        bindings = <&kp LT>, <&kp RT>, <&kp LEFT>;
+    };
+
+    combo_par {
+        timeout-ms = <50>;
+        key-positions = <19 20>;
+        bindings = <&macro_par>;
+    };
+    
+    macro_par: macro_brc {
+        compatible = "zmk,behavior-macro";
+        label = "macro_par";
+        #binding-cells = <0>;
+        bindings = <&kp LPAR>, <&kp RPAR>, <&kp LEFT>;
+    };
+
     keymap {
         compatible = "zmk,keymap";
 

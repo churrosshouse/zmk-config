@@ -52,7 +52,7 @@
         compatible = "zmk,behavior-macro";
         label = "macro_than";
         #binding-cells = <0>;
-        bindings = <&kp LT>, <&kp RT>, <&kp LEFT>;
+        bindings = <&kp LT>, <&kp GT>, <&kp LEFT>;
     };
 
     combo_par {

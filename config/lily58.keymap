@@ -65,6 +65,20 @@
         bindings = <&kp LPAR &kp RPAR &kp LEFT>;
     };
 
+    macro_dquo: macro_quo {
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        bindings = <&kp DOUBLE_QUOTES &kp DOUBLE_QUOTES &kp LEFT_ARROW>;
+        label = "MACRO_QUO";
+    };
+
+    macro_squo: macro_squo {
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        bindings = <&kp SQT &kp SQT &kp LEFT_ARROW>;
+        label = "MACRO_SQUO";
+    };
+
     combos {
         compatible = "zmk,combos";
 
@@ -86,6 +100,16 @@
         combo_par {
             bindings = <&macro_par>;
             key-positions = <37 38>;
+        };
+
+        macro_dquo {
+            bindings = <&macro_dquo>;
+            key-positions = <34 33>;
+        };
+
+        macro_squo {
+            bindings = <&macro_squo>;
+            key-positions = <22 21>;
         };
     };
 

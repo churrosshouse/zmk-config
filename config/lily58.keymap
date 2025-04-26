@@ -155,6 +155,11 @@
             bindings = <&kp DELETE>;
             key-positions = <26 25>;
         };
+
+        space {
+            bindings = <&kp SPACE>;
+            key-positions = <16 15>;
+        };
     };
 
     macros {

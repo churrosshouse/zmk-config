@@ -145,6 +145,16 @@
             bindings = <&ext_power EP_ON>;
             key-positions = <6 8 7>;
         };
+
+        backspace {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <28 27>;
+        };
+
+        delete {
+            bindings = <&kp DELETE>;
+            key-positions = <26 25>;
+        };
     };
 
     macros {

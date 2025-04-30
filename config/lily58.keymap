@@ -164,7 +164,7 @@
         stylepaste {
             bindings = <&kp LS(LG(LA(V)))>;
             key-positions = <40>;
-            timeout-ms = <10>;
+            timeout-ms = <100>;
         };
 
         backwards {

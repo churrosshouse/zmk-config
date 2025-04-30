@@ -84,7 +84,7 @@
     macro_lock: macro_lock {
         compatible = "zmk,behavior-macro";
         #binding-cells = <0>;
-        bindings = <&kp K_SCREENSAVER>;
+        bindings = <&kp LC(LG(Q))>;
         label = "MACRO_LOCK";
     };
 

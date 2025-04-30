@@ -160,6 +160,12 @@
             bindings = <&kp SPACE>;
             key-positions = <42 53>;
         };
+
+        stylepaste {
+            bindings = <&kp LS(LG(LA(V)))>;
+            key-positions = <40>;
+            timeout-ms = <10>;
+        };
     };
 
     macros {
@@ -183,8 +189,6 @@
 &kp LSHFT  &kp Z   &kp X   &kp C      &kp V     &kp B     &mo 2      &kp B      &kp N     &kp M     &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
                            &kp LCTRL  &kp LGUI  &kp LALT  &kp RET    &kp SPACE  &kp BSPC  &kp CAPS  &kp ESC
             >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         lower_layer {

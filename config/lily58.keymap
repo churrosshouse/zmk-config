@@ -173,7 +173,12 @@
 
         stylepaste {
             bindings = <&kp LS(LA(LG(V)))>;
-            key-positions = <40 28>;
+            key-positions = <40 27>;
+        };
+
+        copy {
+            bindings = <&kp LG(C)>;
+            key-positions = <39 27>;
         };
     };
 

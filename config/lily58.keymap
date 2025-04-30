@@ -161,12 +161,6 @@
             key-positions = <42 53>;
         };
 
-        stylepaste {
-            bindings = <&kp LS(LG(LA(V)))>;
-            key-positions = <40>;
-            timeout-ms = <300>;
-        };
-
         backwards {
             bindings = <&kp LG(LBKT)>;
             key-positions = <0 1>;
@@ -175,6 +169,11 @@
         forwards {
             bindings = <&kp LG(RIGHT_BRACKET)>;
             key-positions = <2 3>;
+        };
+
+        stylepaste {
+            bindings = <&kp LS(LA(LG(V)))>;
+            key-positions = <40 28>;
         };
     };
 

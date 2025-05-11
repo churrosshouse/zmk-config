@@ -161,8 +161,8 @@
             key-positions = <42 53>;
         };
 
-        backwards {
-            bindings = <&kp LG(LBKT)>;
+        esc {
+            bindings = <&kp ESC>;
             key-positions = <0 1>;
         };
 

@@ -1,7 +1,8 @@
 &i2c1 {
     status = "okay";
     pinctrl-0 = <&i2c1_default>;
-    pinctrl-names = "default";
+    pinctrl-1 = <&i2c1_sleep>;
+    pinctrl-names = "default", "sleep";
 
     ssd1306@3c {
         compatible = "solomon,ssd1306fb";
@@ -21,6 +22,12 @@
 
 &pinctrl {
     i2c1_default: i2c1_default {
+        group1 {
+            psels = <2 3>;
+        };
+    };
+
+    i2c1_sleep: i2c1_sleep {
         group1 {
             psels = <2 3>;
         };

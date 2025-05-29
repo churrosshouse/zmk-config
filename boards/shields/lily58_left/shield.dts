@@ -1,0 +1,19 @@
+/ {
+    compatible = "zmk,keyboard";
+
+    // 행렬 설정 (필요시)
+    // ...
+
+    // OLED 예시 (I2C1 사용)
+    &i2c1 {
+        status = "okay";
+
+        ssd1306@3c {
+            compatible = "solomon,ssd1306fb";
+            reg = <0x3c>;
+            width = <128>;
+            height = <64>;
+            rotation = <0>;
+        };
+    };
+};
